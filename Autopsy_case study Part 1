@@ -1,0 +1,62 @@
+Aim: Greg Schardt
+Given two files with title as 
+i) 4Dell Latitude CPi.E01            
+ii) 4Dell Latitude CPi.E02  
+
+ 
+
+Analyse them and the answer the below question
+
+
+Software used: Autopsy
+   
+Q 1) What is the Image Hash? Does the acquisition and verification hash match? 
+Ans) The Image Hash is {AEE4FCD9301C03B3B054623CA261959A}
+To reach the solution follow the steps below:
+Step1: Click on “Data Sources”.
+Step2: Click on “4Dell latitude”.
+Step3: Click on “File Metadata”.
+Step4: Check the MD5 section we can find hash there.
+
+
+Q 2) What operating system was used on computer?
+Ans) Microsoft Windows XP
+To reach the solution follow the steps below:
+      Step1: Click on “Data Sources”
+Step2: Click on “Results”
+Step3: Click on “Description” to find the operating System used.
+
+
+Q3) When was the install date?
+       Ans) Thursday, August 19,2004 at 22:48:27
+To reach the solution follow the steps below:
+Step1: Click on “Results”.
+Step2: Click on “Extracted Content”.
+Step3: Click on “Operating System Information”. Here go to the” results”, where under” Date/Time”, to find the required data.
+
+
+Q 4) Who is the registered owner?
+      Ans) Greg Schardt
+To reach the solution follow the steps below:
+      Step1: Click on “Results”.
+Step2: Click on “Extracted Content”.
+Step3: Click on “Operating System Information”. Here go to” results”, under “owner”, to get the required information.
+
+
+Q 5) What is the Computer Account Name?
+Ans) N-1A9ODN6ZXK4LQ
+To reach the solution follow the steps below:
+Step1: Click on “Results”.
+Step2: Click on “Extracted Content”.
+Step3: Click on “Operating System Information”. Here go to” System”, under then go to “Results”, under “Name”, to get the name of the computer account.
+
+
+
+
+ 
+
+
+
+
+ 
+
