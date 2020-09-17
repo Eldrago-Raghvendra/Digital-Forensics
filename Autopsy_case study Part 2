@@ -1,0 +1,47 @@
+Q 6) When was the last recorded computer shutdown date/time? 
+Ans) The last recorded computer shutdown date/time is 2004/08/27 -10:46:27
+To reach the solution follow the steps below:
+Step1: Click on “Data Sources”.
+Step2: Click on “4Dell latitude”.
+Step3: Click on “Vol-2”.
+Step4: We need to follow a series of steps now in the vol-2 section so we do as follow:
+
+WINDOWS/SYSTEM32/CONFIG/SOFTWARE/MICROSOFT/WINDOWSNT/CURRENT VERSION/WINLOGON/DEFAULT USER NAME/ PREFETCHER / EXIT TIME 
+
+Q 7) How many accounts are recorded (total number)?
+Ans) There are 5 accounts recorded in total.
+Mr., Administrator, Guest, Support388945a0, Help Assistant
+To reach the solution follow the steps below:
+Step1: Click on “Results”.
+Step2: Click on “Operating System User Accounts”.
+
+Q 8) Who was the last user to logon to the computer?
+Ans) The last user to logon the computer was Mr. Evil.
+To reach the solution follow the steps below:
+Step1: Click on “Data Sources”.
+Step2: Click on “4Dell latitude”.
+Step3: Click on “Vol-2”.
+Step4: We need to follow a series of steps now in the vol-2 section so we do as follow: 
+
+WINDOWS / SYSTEM32 / CONFIG / SOFTWARE / MICROSOFT / WINDOWS NT / CURRENT VERSION / WINLOGON / DEFAULT USER NAME
+
+Q 9) List the network cards used by this computer?
+Ans) The network cards are:
+: Compaq WL110 Wireless LAN PC Card, Xircom CardBus Ethernet 100 + Modem 56 (Ethernet Interface).
+To reach the solution follow the steps below:
+Step1: Click on “Data Sources”.
+Step2: Click on “4Dell latitude”.
+Step3: Click on “Vol-2”.
+Step4: We need to follow a series of steps now in the vol-2 section so we do as follow:  
+
+WINDOWS / SYSTEM32 / CONFIG / SOFTWARE / MICROSOFT / WINDOWS NT / CURRENT VERSION / NETWORK CARDS / DESCRIPTIONS 
+
+Q 10) What is the IP address and MAC address of the computer?
+Ans) The results are: IP=192.168.1.111, MAC=00:10:a4:93:3e:09
+To reach the solution follow the steps below:
+Step1: Click on “Data Sources”.
+Step2: Click on “4Dell latitude”.
+Step3: Click on “Vol-2”.
+Step4: We need to follow a series of steps now in the vol-2 section so we do as follow:
+
+Program Files / Look@LAN / irunin.ini
