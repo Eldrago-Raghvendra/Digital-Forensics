@@ -1,0 +1,96 @@
+Q 1) Search for programs/tools that aided in the crime (Wireless Hacking)
+Ans)
+To reach the solution follow the steps below:
+Step1: Click on “Results”.
+Step2: Click on “Extracted Content”.
+Step3: Click on “Installed Programmes”.
+
+ 
+
+
+
+
+The programs which will be used for hacking purpose
+
+
+1. Look@LAN
+Look@Lan is an advanced network monitor that allows you to monitor your net in few clicks.
+
+
+ 
+
+2. Cain and Abel
+
+
+Cain and Abel are a password recovery tool for Microsoft Windows. It can recover many kinds of passwords.
+It uses methods such as dictionary attacks, brute force and cryptanalysis attacks.
+
+
+ 
+3. Network Stumbler
+NetStumbler is a tool for Windows that facilitates detection of Wireless LANs using the
+ It runs on Microsoft Windows operating systems from Windows 2000 to Windows XP.
+
+
+
+4. mIRC
+
+mIRC is an Internet Relay Chat client for Windows, created in 1995.
+
+ 
+
+
+
+5. Ethereal/Wireshark
+Wireshark is a free and open-source packet analyser. It is used for network troubleshooting.
+
+ 
+
+
+
+6. 123WASP
+WASP will display all passwords of the currently logged in user that are stored in the Microsoft PWL file.
+
+
+
+Q 2) Which Email client is used by Mr. Evil?
+
+Ans) The Email clients are Forte Agent, MSN Explorer, MSN (Hotmail) Email and Outlook Express
+
+To reach the solution follow the steps below:
+
+
+Click on Data Sources select 4Dell Latitude \vol2 \ WINDOWS\system32\config\software\clients\Mail
+
+
+Q 3) What is the SMTP email address for Mr. Evil?
+Ans) The SMTP email address iswhoknowsme@sbcglobal.net
+To reach the solution follow the steps below:
+
+
+ Data Sources select 4Dell Latitude \ vol2 \ Program Files\Agent\Data\Agent.ini
+  
+  
+Q 4) How many executable files are in the recycle bin?
+
+Ans) There are 4 files in recycle bin
+To reach the solution follow the steps below:
+Step1: Click on “Data Sources”.
+Step2: Click on “4Dell latitude”.
+Step3: Click on “Vol 2”.
+Step4: Check the Recycler section we can find hash there.
+
+Q 5) Are there any malware on the computer?
+Ans) Yes.
+A zip bomb malware by the name of unix_hack.tgz in system.
+To reach the solution follow the steps below:
+Results \ Extracted Content \ Interesting Items\ Possible Zip Bomb \Interesting Files
+ 
+Q 6) A popular IRC (Internet Relay Chat) program called MIRC was installed. What are the userid?
+
+Ans) user=Mini Me,
+             email=none@of.ya,
+             nick=Mr, 
+             anick=mrevilrulez
+To reach the solution follow the steps below: 
+ Data Sources select 4Dell Latitude \ vol2 \ Program Files\mIRC\mirc.ini
