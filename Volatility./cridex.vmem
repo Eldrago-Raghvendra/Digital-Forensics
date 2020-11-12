@@ -1,0 +1,144 @@
+AIM:
+
+Perform the forensic analysis of our Ram dump using Volatility and plugins within and document the results
+
+REQUIREMENTS:
+
+A Virtual Machine with one of the underlying OS:
+•	Parrot Security OS
+•	Kali Linux
+•	Windows
+
+Software:
+•	Volatility
+•	Dump Generator (E.g.-FTK Imager)
+•	Word for Documentation
+
+     Internet connection in case of related analysis
+
+    RAMPDUMP USED:
+
+•	Cridex.vmem
+
+
+
+Installation:
+
+Step-1) Download the Volatility Package from Link:
+ https://www.volatilityfoundation.org/releases.
+The site will look as below:
+ 
+Step-2) Download Malware - Cridex as Sample Memory from Link: https://github.com/volatilityfoundation/volatility/wiki/MemorySamples.
+The GitHub page will look as below:
+
+ 
+
+Step-3) Open the terminal window and check for the various options and supported plugin commands available in volatility. 
+Command: volatility -h
+
+ 
+
+
+ 
+Some of the above plugins are discussed below:
+
+1)	Imageinfo
+•	it is to identify the supported “profiles” for the dumped memory
+            image.
+•	Command: volatility -f cridex.vmem imageinfo
+
+ 
+
+
+2)	Gdt: -
+•	Display Global Descriptor Table
+
+•	Command: volatility -f cridex.vmem –profile=WinXPSP2x86 gdt
+
+ 
+
+
+3)	Sessions
+•	List details on _MM_SESSION_SPACE (user logon sessions)
+•	Command : volatility -f cridex.vmem –profile=WinXPSP2x86 sessions
+
+
+ 
+
+
+4)	svcscan
+•	To see which services are registered on your memory image, use the svcscan command. 
+•	The output shows the process ID of each service (if its active and pertains to a usermode process), the service name, service display name, service type, and current status. 
+•	It also shows the binary path for the registered service - which will be an EXE for user mode services and a driver name for services that run from kernel mode
+•	Command : volatility -f cridex.vmem –profile=WinXPSP2x86 svcscan
+
+
+
+
+5)	Cmdline
+ using cmdscan, consoles and cmdline plugins:
+•	cmdline plugin which display process command-line arguments did give us the full path of the processes launched with PID 1484 and 1640.
+•	Command: $ volatility -f cridex.vmem --profile=WinXPSP2x86 cmdline
+ 
+
+6)	Connscan & sockets
+•	This is done after seeing the running processes, to check the running sockets and open connections on the computer. 
+•	To do this we’ll use these different plugins: connscan, netscan and sockets
+•	The connscan plugin is a scanner for TCP connections, while sockets will print a list of open sockets.
+•	Commands:
+•	$ volatility -f cridex.vmem --profile=WinXPSP2x86 connscan
+•	$ volatility -f cridex.vmem --profile=WinXPSP2x86 sockets
+
+ 
+7)	psxview 
+•	It will list processes that are trying to hide themselves while running on the computer, this plugin can be really useful.
+•	Command:
+•	$ volatility -f cridex.vmem --profile=WinXPSP2x86 psxview
+ 
+
+8)	kdbgscan:
+•	This is designed to positively identify the correct profile of the system and the correct KDBG (kernel debugger block)address. 
+•	It simply scans for KDBG header signatures linked to the profiles in Volatility. 
+•	Command: 
+•	volatility -f cridex.vmem --profile=WinXPSP2x86 kdbgscan
+ 
+
+
+9)	pstree: 
+•	This plug-in of Volatility tool shows processes with their PID and PPID’s. 
+•	The purpose is to display the processes in tree (parent/child)  format. 
+•	Command: volatility -f cridex.vmem --profile=WinXPSP2x86 pstree
+
+ 
+
+
+
+10)	pslist: 
+•	This plugin of volatility tool shows the processes and get a list of running process in the memory dump.
+•	Command: volatility -f cridex.vmem --profile=WinXPSP2x86 pslist
+
+
+ 
+
+
+
+11)	psscan: 
+•	This plug-in of Volatility tool can find processes that previously terminated (inactive) and processes that have been hidden or unlinked by a
+•	rootkit.
+•	Command: volatility -f cridex.vmem --profile=WinXPSP2x86 psscan
+
+
+ 
+
+
+12)	Ldrmodules
+
+•	There are many ways to hide a DLL. One of the ways involves unlinking the DLL from one (or all) of the linked lists in the PEB.
+•	when this is done, there is still information contained within the VAD (Virtual Address Descriptor) which identifies the base address of the DLL and its full path on disk.
+•	For each memory mapped PE file, the ldrmodules command prints True or False if the PE exists in the PEB lists.
+
+•	Commands: volatility -f cridex.vmem –profile=WinXPSP2x86 ldrmodules
+
+
+ 
+
