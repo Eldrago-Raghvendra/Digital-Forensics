@@ -1,0 +1,61 @@
+1. Mention the profile of given memory image. [3]
+Ans. WinXPSP2x86, WinXPSP3x86
+ 
+
+
+2. Number of all processes / Number of active processes? [3]
+Ans. Number of all process- 31
+         Number of active process – 29 (as 2 process are completed)
+
+
+3. The parent of the lsass.exe? [3]
+Ans.668(services.exe), 624(Winlogon.exe)
+
+ 
+4. The parent of services.exe? [3]
+Ans. 624 (Winlogon.exe)
+ 
+
+5. PID and PPID of services.exe and its children? [3]
+Ans. services.exe  PID-668 & PPID-624
+         lsass.exe  PID-1928 & PPID-668
+         lsass.exe  PID-868 & PPID-668
+         svchost.exe  PID-856 & PPID-668
+         jqs.exe  PID-1580 & PPID-668
+         svchost.exe  PID-1080 & PPID-668
+         svchost.exe  PID-940 & PPID-668
+         vmtoolsd.exe  PID-1664 & PPID-668
+         spoolsv.exe  PID-1412 & PPID-668
+         svchost.exe  PID-1200 & PPID-668
+         alg.exe  PID-188 & PPID-668
+         VMUpgradeHelper  PID-1816 & PPID-668
+         imapi.exe  PID-756 & PPID-668
+         svchost.exe  PID-1032 & PPID-668
+
+
+
+6. Which port does PID 680 use? [3]
+Ans. 0,500 & 4500
+ 
+7. Which port does PID 1928 use? [3]
+Ans.  no listed in sockets or sockscan (it is not the network process).
+
+ 
+8. Number of DLLs of PID 680 _______, and for PID 1928 _______? [3]
+Ans.  57 & 28
+Commands-
+volatility -f data.vmem --profile=WinXPSP2x86 dlllist -p 680 > 1.txt
+volatility -f data.vmem --profile=WinXPSP2x86 dlllist -p 1928 > 2.txt
+
+ 
+ 
+9. In the PID 680, 868, 1928 there is malicious behaviour in the regions of
+PID/s_________________? [3]
+Ans. 868,1928
+
+ 
+ 
+10. Using the plugin procdump. Number of files generated with errors _____________? [3]
+Ans. 3 files with error (System, cmd.exe and ipconfig.exe).
+
+ 
