@@ -1,0 +1,94 @@
+AIM:
+
+Perform the hiding and extraction of data using Openstego 
+
+REQUIREMENTS:
+
+Openstego
+Image file
+Text file containing the sensitive info
+Word for Documentation
+
+
+IMAGE FILE:
+Minato.jpeg
+
+
+
+ 
+
+
+
+TEXT FILE:
+Song.txt
+
+ 
+
+
+STEPS TO PERFORM THE EXPERIMENT: -
+
+Step 1) Run the Openstego and select the file that is to be hidden to provide the file path to Openstego.
+
+
+ 
+
+
+In my case it is Song.txt 
+
+
+
+
+
+
+
+Step 2) Select the cover file in which the text file is to be hidden. 
+In my case it is Minato.jpeg
+
+
+
+ 
+
+
+
+
+
+     Step 3) Select the path where and specify the file name.
+      In my case I choose it to be Kage.bmp
+
+
+ 
+
+
+
+
+
+Step 4) Select the encryption algorithm as I choose it to be AES and provide a password.
+Which in my case is “123456”
+
+
+ 
+
+
+Step 5) Click on hide data option. The file starts getting embedded into cover file.
+
+Step 6) To start extracting the data click on the file you find suspicious.
+As per my case it was “Kage.bmp”
+
+
+ 
+
+Step 7) Provide the Output path or folder where the extracted data is to be found.
+As per my case it was “OUUTPUT”
+
+
+ 
+
+
+Step 8) Enter the password in password field as “123456” and click on extract data.
+
+
+
+ 
+
+Step 9) We can find our extracted data in the chosen folder as in my case was “OUUTPUT”
+
