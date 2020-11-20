@@ -9,37 +9,6 @@ System
 Internet connection in case of related analysis
 Word for Documentation
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Installation:
 
 •	Windows Sysinternals tools are the utilities to manage, diagnose, troubleshoot, and monitor a Microsoft Windows environment.
@@ -55,23 +24,6 @@ AccessChk, AccessEnum, AdExplorer, AdInsight, AdRestore, Autologon, Autoruns, Bg
 
 They’re not specifically categorized as forensic tools but can be very useful to a forensic analyst by providing crucial system information that can be useful in a case.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Some of them which I used for my system analysis are:
 
 Process Monitor:
@@ -82,70 +34,15 @@ Process Monitor:
 •	Its uniquely powerful features will make Process Monitor a core utility in your system troubleshooting and malware hunting toolkit.
 
 
-
- 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
 Access Enum:
 
 •	It gives you a full view of your file system
 •	Includes Registry security settings in seconds, making it the ideal tool for helping find security holes and lock down permissions where necessary.
 
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Load Order:
 
 •	It is an applet that shows you the order in which a Windows NT or Windows 2000 system loads device drivers.
 •	It is a simple utility which shows driver load order.
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 CPU Stress:
 
@@ -157,27 +54,12 @@ CPU Stress:
 •	Priority: 
 •	This controls the thread priority.
 
- 
-
-
-
-
 
 Autoruns:
 •	It shows you what programs are configured to run during system bootup or login, and when you start various built-in Windows applications like Internet Explorer, Explorer and media players. 
 •	These programs and drivers include ones in your start-up folder, Run, Run Once, and other Registry keys. 
 •	Autoruns reports Explorer shell extensions, toolbars, browser helper objects, Win logon notifications, auto-start services, and much more. 
 •	Autoruns goes way beyond other AutoStart utilities.
-
- 
-
-
-
-
-
-
-
-
 
 
 Disk View:
@@ -186,20 +68,6 @@ Disk View:
 •	Double-click to get more information about a file to which a cluster is allocated.
 
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Cache set:
 
 •	It is an applet that allows you to manipulate the working-set parameters of the system file cache. 
@@ -209,13 +77,6 @@ Cache set:
 •	This is because the system automatically trims working sets once a second.
 
  
-
-
-
-
-
-
-
 TCP View:
 
 •	It is a Windows program that will show you detailed listings of all TCP and UDP endpoints on your system, including the local and remote addresses and state of TCP connections. 
@@ -225,15 +86,6 @@ TCP View:
 
  
 
-
-
-
-
-
-
-
-
-
 VMMap:
 
 •	It is a process virtual and physical memory analysis utility.
@@ -242,16 +94,6 @@ VMMap:
 •	Powerful filtering and refresh capabilities allow you to identify the sources of process memory usage and the memory cost of application features.
 
  
-
-
- 
-
-
-
-
-
-
-
 
 RamMap:
 
@@ -264,11 +106,3 @@ RamMap:
 •	Physical Ranges: physical memory addresses, 
 •	File Summary: file data in RAM by file, 
 •	File Details: individual physical pages by file.
-
- 
- 
-
-
- 
-
-
