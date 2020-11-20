@@ -1,0 +1,274 @@
+    AIM:
+
+Perform the forensic analysis of our systems using various Sysinternals tools and document the results
+
+REQUIREMENTS:
+
+Sysinternals Suite
+System
+Internet connection in case of related analysis
+Word for Documentation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Installation:
+
+•	Windows Sysinternals tools are the utilities to manage, diagnose, troubleshoot, and monitor a Microsoft Windows environment.
+•	They are free to use and available at https://docs.microsoft.com/en-us/sysinternals/
+•	The Sysinternals Troubleshooting Utilities have been rolled up into a single Suite of tools. 
+•	This file contains the individual troubleshooting tools and help files. 
+•	It does not contain no troubleshooting tools like the BSOD Screen Saver.
+
+The Suite is a bundle of the following Sysinternals Utilities: 
+AccessChk, AccessEnum, AdExplorer, AdInsight, AdRestore, Autologon, Autoruns, BgInfo, BlueScreen, CacheSet, ClockRes, Contig, Coreinfo, Ctrl2Cap, DebugView, Desktops, Disk2vhd, DiskExt, DiskMon, DiskView, Disk Usage (DU), EFSDump, FindLinks, Handle, Hex2dec, Junction, LDMDump, ListDLLs, LiveKd, LoadOrder, LogonSessions, MoveFile, NotMyFault, NTFSInfo, PageDefrag, PendMoves, PipeList, PortMon, ProcDump, Process Explorer, Process Monitor, PsExec, PsFile, PsGetSid, PsInfo, PsKill, PsList, PsLoggedOn, PsLogList, PsPasswd, PsPing, PsService, PsShutdown, PsSuspend, PsTools, RAMMap, RegDelNull, RegHide, RegJump, Registry Usage (RU), SDelete, ShareEnum, ShellRunas, Sigcheck, Streams, Strings, Sync, Sysmon, TCPView, VMMap, VolumeID, WhoIs, WinObj, ZoomIt 2 
+
+ 
+
+They’re not specifically categorized as forensic tools but can be very useful to a forensic analyst by providing crucial system information that can be useful in a case.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Some of them which I used for my system analysis are:
+
+Process Monitor:
+
+•	It is an advanced monitoring tool for Windows that shows real-time file system, Registry and process/thread activity. 
+•	Its features include rich and non-destructive filtering, comprehensive event properties such as session IDs and user names.
+•	It also includes reliable process information, full thread stacks with integrated symbol support for each operation, simultaneous logging to a file, and much more.
+•	Its uniquely powerful features will make Process Monitor a core utility in your system troubleshooting and malware hunting toolkit.
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+Access Enum:
+
+•	It gives you a full view of your file system
+•	Includes Registry security settings in seconds, making it the ideal tool for helping find security holes and lock down permissions where necessary.
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Load Order:
+
+•	It is an applet that shows you the order in which a Windows NT or Windows 2000 system loads device drivers.
+•	It is a simple utility which shows driver load order.
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CPU Stress:
+
+•	It is a utility that can be used to simulate CPU activity by running up to 64 threads in a tight loop.
+•	Each thread can be started, paused or stopped independently and can be configured with the following parameters: 
+•	Activity Level: 
+•	This can be Low, Medium, Busy or Maximum which controls how long the thread sleeps between cycles. 
+•	Setting this value to Maximum causes the thread to run continuously. 
+•	Priority: 
+•	This controls the thread priority.
+
+ 
+
+
+
+
+
+Autoruns:
+•	It shows you what programs are configured to run during system bootup or login, and when you start various built-in Windows applications like Internet Explorer, Explorer and media players. 
+•	These programs and drivers include ones in your start-up folder, Run, Run Once, and other Registry keys. 
+•	Autoruns reports Explorer shell extensions, toolbars, browser helper objects, Win logon notifications, auto-start services, and much more. 
+•	Autoruns goes way beyond other AutoStart utilities.
+
+ 
+
+
+
+
+
+
+
+
+
+
+Disk View:
+
+•	It shows you a graphical map of your disk, allowing you to determine where a file is located or, by clicking on a cluster, seeing which file occupies it. 
+•	Double-click to get more information about a file to which a cluster is allocated.
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cache set:
+
+•	It is an applet that allows you to manipulate the working-set parameters of the system file cache. 
+•	Besides the ability to control the minimum and maximum working set sizes, it also allows us to reset the Cache's working set, forcing it to grow as necessary from a minimal starting point.
+•	We can manipulate cache size by simply entering new values. 
+•	The Cache's size changes immediately and then proceed to shrink or grow quickly. 
+•	This is because the system automatically trims working sets once a second.
+
+ 
+
+
+
+
+
+
+
+TCP View:
+
+•	It is a Windows program that will show you detailed listings of all TCP and UDP endpoints on your system, including the local and remote addresses and state of TCP connections. 
+•	It also reports the name of the process that owns the endpoint.
+•	It will enumerate all active TCP and UDP endpoints, resolving all IP addresses to their domain name versions. 
+•	Specific processes with their associated port numbers, connection state and protocol used are displayed.
+
+ 
+
+
+
+
+
+
+
+
+
+
+VMMap:
+
+•	It is a process virtual and physical memory analysis utility.
+•	It shows a breakdown of a process's committed virtual memory types as well as the amount of physical memory (working set) assigned by the operating system to those types. 
+•	Besides graphical representations of memory usage, VMMap also shows summary information and a detailed process memory map. 
+•	Powerful filtering and refresh capabilities allow you to identify the sources of process memory usage and the memory cost of application features.
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+RamMap:
+
+•	It is an advanced physical memory usage analysis utility for Windows Vista and higher. 
+•	It presents usage information in different ways on its several different tabs: 
+•	Use Counts: usage summary by types
+•	Processes: process working set sizes, 
+•	Priority Summary: prioritized standby list sizes, 
+•	Physical Pages: per-page use for all physical memory, 
+•	Physical Ranges: physical memory addresses, 
+•	File Summary: file data in RAM by file, 
+•	File Details: individual physical pages by file.
+
+ 
+ 
+
+
+ 
+
+
